@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "stmqqt": {
+      "hosting": {
+        "robo-business": [
+          "stmqqt"
+        ]
+      }
+    }
+  }
+}
