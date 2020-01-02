@@ -1,0 +1,24 @@
+.example-card {
+  margin: 0 auto;
+  width: 40%;  
+  text-align:center;
+  box-shadow: 0 2px 1px -1px cornflowerblue,
+                0 1px 1px 0 cornflowerblue, 
+                0 1px 3px 0 cornflowerblue; 
+}
+
+.example-header-image {
+  background-size: cover;
+}
+.mat-card-header {
+  color: darksalmon;
+}
+img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

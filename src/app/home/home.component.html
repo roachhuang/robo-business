@@ -1,0 +1,19 @@
+<br>
+<mat-card>
+  <video width='320' height='240' mat-card-image #vid autoplay muted loop>
+    <source src='assets/home.mp4' type='video/mp4'>
+  </video>
+</mat-card>
+
+<br>
+
+<mat-chip-list> 
+  <mat-chip selected>
+    <a [routerLink]="'/course'">
+      <mat-icon>assignment</mat-icon>&nbsp; 課程内容
+    </a>
+  </mat-chip>
+  <mat-chip color='warn' selected>
+    <a [routerLink]="'/fee'"><mat-icon>monetization_on</mat-icon>&nbsp; 費用</a>
+  </mat-chip>
+</mat-chip-list>
