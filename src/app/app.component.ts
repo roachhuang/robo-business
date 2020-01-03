@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
+// import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,7 @@ import {MatCardModule} from '@angular/material/card';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Wifi 遙控/避障自走車';
+  // title = 'Wifi 遙控/避障自走車';
+  d = new Date();
+  currentYear = this.d.getFullYear();
 }

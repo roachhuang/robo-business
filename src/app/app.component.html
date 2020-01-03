@@ -1,11 +1,19 @@
 <!-- Toolbar -->
-<mat-toolbar color="accent">
-  <span class=md-caption>寒暑假, 安親班短期智能機器車教學課程</span>
-</mat-toolbar>
 
-<router-outlet></router-outlet>
+<div class="mat-app-background basic-container">
+  <mat-toolbar color="accent">
+    <span>
+      <strong>寒暑假, 安親班短期智能機器車教學</strong>
+    </span>
+  </mat-toolbar>
 
-<footer>
-  <p>物聯網學習</p>
-  <p>我的網頁: <a href='http://ajoan.com'>ajoan.com </a></p>
-</footer>
+  <router-outlet></router-outlet>
+
+  <footer>
+    <h4>物聯網學習</h4>    
+    <address>
+      作者 <a href='mailto:ethanhgpe@gmail.com'>Eson Huang </a>
+    </address>
+    <small>&copy; Copyright {{currentYear}}, 安和學習舘</small>
+  </footer>
+</div>
