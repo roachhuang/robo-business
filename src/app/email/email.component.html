@@ -1,0 +1,25 @@
+<h3>綫上報名 (收到 email 後我們將儘快與你聯絡, 謝謝)</h3>
+
+<!--
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }} </span>
+  <span>{{ item.price | currency }}</span>
+</div>y
+-->
+
+<form class='example-form' [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+    <label for="name">
+      姓名:
+      <input matInput id="name" type="text" formControlName="name">      
+    </label>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+    <label for="tel">
+      手機號碼 (10 位數):
+      <input matInput id="tel" pattern="^\d{10}$" type="tel" formControlName="tel" required>
+    </label>
+    </mat-form-field>
+    <button mat-raised-button color='accent' type="submit" [disabled]="!signupForm.valid">送出</button>
+</form>
+<p>Form Status: {{signupForm.status}}</p>

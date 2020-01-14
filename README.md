@@ -28,4 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## deploy
-node server.js
+at linux create a <project name> folder and copy src folder onto it from win pc
+npm i
+pm2 start server.js
+
+must subscribe http service func at caller component.

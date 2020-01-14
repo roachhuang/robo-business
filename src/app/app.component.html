@@ -1,19 +1,43 @@
 <!-- Toolbar -->
 
-<div class="mat-app-background basic-container">
-  <mat-toolbar color="accent">
-    <span>
-      <strong>寒暑假, 安親班短期智能機器車教學</strong>
-    </span>
-  </mat-toolbar>
+<mat-toolbar color="primary">
+  <span>
+    <strong>寒暑假, 安親班短期智能機器車教學</strong>
+  </span>
+  <div>
+    <button mat-button [routerLink]="'/course'">
+      <mat-icon>assignment</mat-icon>&nbsp; 課程内容
+    </button>
+    <button mat-button [routerLink]="'/fee'">
+      <mat-icon>monetization_on</mat-icon>&nbsp; 費用
+    </button>
+    <button mat-button [routerLink]="'/email'">
+      <mat-icon>email</mat-icon>&nbsp; 報名
+    </button>
+    <button mat-button [routerLink]="'/home'">
+      <mat-icon>home</mat-icon>&nbsp; 主頁面
+    </button>
+  </div>
+</mat-toolbar>
 
-  <router-outlet></router-outlet>
+<!--
+    <mat-menu #appMenu="matMenu">
+    <a mat-menu-item color='accent' routerLink="/home" routerLinkActive="active">Home</a>
+    <a mat-menu-item color='primary' [routerLink]="'/course'">
+      <mat-icon>assignment</mat-icon>&nbsp; 課程内容
+    </a>
+    <a color='warn' mat-raised-button [routerLink]="'/fee'">
+      <mat-icon>monetization_on</mat-icon>&nbsp; 費用
+    </a>
+    </mat-menu>
+  -->
 
-  <footer>
-    <h4>物聯網學習</h4>    
-    <address>
-      作者 <a href='mailto:ethanhgpe@gmail.com'>Eson Huang </a>
-    </address>
-    <small>&copy; Copyright {{currentYear}}, 安和學習舘</small>
-  </footer>
-</div>
+<router-outlet></router-outlet>
+
+<footer>
+  <h4>物聯網學習</h4>
+  <address>
+    作者 <a href='mailto:ethanhgpe@gmail.com'>Eson Huang </a>
+  </address>
+  <small>&copy; Copyright {{currentYear}}, 安和學習舘</small>
+</footer>

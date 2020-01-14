@@ -4,7 +4,32 @@
     margin: 2em auto;
     text-align: center;
   }
+
+/*
 span{
   margin: auto;
 }
-  
+
+a {
+  text-decoration: none;
+  color: seashell;
+}
+
+example-button-row button,
+.example-button-row a {
+  text-align: center;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}]
+.example-button-row
+{
+  text-align: center;
+}
+
+.example-button-row a {
+    margin-right: 8px;
+  display: inline-block;
+}
+
+*/
