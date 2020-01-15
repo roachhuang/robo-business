@@ -17,21 +17,25 @@ import {
   MatButtonModule,
   MatMenuModule,
   MatInputModule,
+  MatDialog,
+  MatDialogModule,
 } from '@angular/material';
 import { FeeComponent } from './fee/fee.component';
 import { HomeComponent } from './home/home.component';
-import { EmailComponent } from './email/email.component';
+import { EmailComponent, DialogOverviewExampleDialog } from './email/email.component';
 // import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
+  entryComponents: [DialogOverviewExampleDialog],
   declarations: [
     AppComponent,
     CourseComponent,
     FeeComponent,
     HomeComponent,
     EmailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DialogOverviewExampleDialog
   ],
   imports: [
     ReactiveFormsModule,
@@ -42,7 +46,7 @@ import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
     MatCardModule,
     MatToolbarModule, MatIconModule, MatButtonModule, MatChipsModule,
     MatGridListModule, MatMenuModule, MatInputModule,
-    HttpClientModule, FormsModule,
+    HttpClientModule, FormsModule, MatDialogModule,
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
