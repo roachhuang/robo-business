@@ -11,6 +11,6 @@ export class MessageService {
   sendMessage(body: any) {
     console.log('service called: ', JSON.stringify(body));
     // don't subscribe http at service component; do it on caller component
-    return this.http.post('http://localhost:5000/sendmail', body);
+    return this.http.post('http://ajoan.com:5000/sendmail', body);
   }
 }
