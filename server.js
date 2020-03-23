@@ -23,12 +23,15 @@ mqttClient.connect();
 app.use(express.static(__dirname + '/dist'));
 
 // it should use post but for easy test on broswer, i use get instead.
-app.get('/moveCar1', (req, res) => {
+app.get('/moveCar', (req, res) => {
+    console.log(req.query.devId);
     console.log(req.query.payload);
-    mqttClient.sendMessage('moveCar1', req.query.payload);
+    mqttClient.sendMessage(`moveCar/${req.query.devId}`, req.query.payload);
     // res.sendStatus(200);
 });
-
+app.get('/devId', (req, res)=>{
+    res.send(mqttClient.devId);    
+});
 
 app.get('/sitemap.xml', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'sitemap.xml'));
