@@ -33,3 +33,5 @@ npm i
 pm2 start server.js
 
 must subscribe http service func at caller component.
+
+3/24/2020 - add mqtt authentication so that others aren't able to connect to my mosquitto server
