@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 html, body { height: 100%; }
@@ -11,3 +12,17 @@ footer {
 .basic-container {
     padding: 20px;
   }
+=======
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+html, body { height: fit-content; margin: 0.1em; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.container {
+    margin: 0.1em;
+  }
+
+footer {
+  display: block;  
+  background-color: aquamarine
+}
+>>>>>>> 52ae5b67a6a95fe6414fa83d96b4fbca6384de08

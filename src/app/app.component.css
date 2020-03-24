@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 
+=======
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+  
+>>>>>>> 52ae5b67a6a95fe6414fa83d96b4fbca6384de08
   mat-card {
     max-width: 80%;
     margin: 2em auto;
     text-align: center;
   }
 
+<<<<<<< HEAD
 /*
 span{
   margin: auto;
@@ -33,3 +42,6 @@ example-button-row button,
 }
 
 */
+=======
+  
+>>>>>>> 52ae5b67a6a95fe6414fa83d96b4fbca6384de08

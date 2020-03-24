@@ -1,4 +1,5 @@
 a {
+<<<<<<< HEAD
   text-decoration: none;
   color: seashell;
 }
@@ -21,3 +22,8 @@ a {
     margin-right: 8px;
   display: inline-block;
 }
+=======
+    text-decoration: none;
+    color: seashell;
+}
+>>>>>>> 52ae5b67a6a95fe6414fa83d96b4fbca6384de08

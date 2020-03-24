@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import 'hammerjs';
+>>>>>>> 52ae5b67a6a95fe6414fa83d96b4fbca6384de08
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

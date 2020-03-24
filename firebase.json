@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "robo-business",
+      "public": "dist/robo-business",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

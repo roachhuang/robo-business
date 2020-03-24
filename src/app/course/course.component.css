@@ -1,6 +1,10 @@
 .example-card {
   margin: 0 auto;
+<<<<<<< HEAD
   width: 60%;  
+=======
+  width: 40%;  
+>>>>>>> 52ae5b67a6a95fe6414fa83d96b4fbca6384de08
   text-align:center;
   box-shadow: 0 2px 1px -1px cornflowerblue,
                 0 1px 1px 0 cornflowerblue, 
