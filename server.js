@@ -24,12 +24,12 @@ app.use(express.static(__dirname + '/dist'));
 
 // it should use post but for easy test on broswer, i use get instead.
 app.get('/moveCar', (req, res) => {
-    console.log(req.query.devId);
+    // console.log(req.query.devId);
     console.log(req.query.payload);
-    mqttClient.sendMessage(`moveCar/${req.query.devId}`, req.query.payload);
-    // res.sendStatus(200);
+    mqttClient.sendMessage(`moveCar/${req.query.devId}`, req.query.payload);    
+    res.sendStatus(200);
 });
-app.get('/devId', (req, res)=>{
+app.get('/devId', (req, res)=>{    
     res.send(mqttClient.devId);    
 });
 
