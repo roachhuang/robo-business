@@ -27,7 +27,7 @@ app.get('/moveCar', (req, res) => {
     // console.log(req.query.devId);
     console.log(req.query.payload);
     mqttClient.sendMessage(`moveCar/${req.query.devId}`, req.query.payload);    
-    res.sendStatus(200);
+    res.sendStatus(200);    // could this solve the mqtt msg in delay receiving issue?
 });
 app.get('/devId', (req, res)=>{    
     res.send(mqttClient.devId);    
