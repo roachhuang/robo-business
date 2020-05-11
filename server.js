@@ -14,7 +14,7 @@ let topic ='';
 app.use(cors());
 app.use(bodyParser.json());
 // create application/x-www-form-urlencoded parser
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 var mqttClient = new mqttHandler();
 mqttClient.connect();
@@ -22,7 +22,7 @@ mqttClient.connect();
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist'));
 
-// it should use post but for easy test on broswer, i use get instead.
+/* it should use post but for easy test on broswer, i use get instead.
 app.get('/moveCar', (req, res) => {
     // console.log(req.query.devId);
     console.log(req.query.payload);
@@ -30,6 +30,15 @@ app.get('/moveCar', (req, res) => {
     res.sendStatus(200);    // could this solve the mqtt msg in delay receiving issue?
     // res.json({info: "msg published"});
 });
+*/
+app.post('/moveCar', (req, res) => {
+    // console.log(req.query.devId);
+    console.log(req.body);  // body is a json obj, while mqtt.push takes only string as msg
+    mqttClient.sendMessage(`moveCar/${req.body.devId}`,  JSON.stringify(req.body));    
+    res.json(req.body);    // could this solve the mqtt msg in delay receiving issue?
+    // res.json({info: "msg published"});
+});
+
 app.get('/devId', (req, res)=>{    
     res.send(mqttClient.devId);    
 });
